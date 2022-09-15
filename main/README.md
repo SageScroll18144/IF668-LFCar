@@ -52,7 +52,7 @@ void turnRight();
 
 - Função que gira o carro para direita
 
-## Distancia
+## Distância
 
 Realiza a leitura do ultrassônico
 
