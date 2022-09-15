@@ -51,3 +51,13 @@ void turnRight();
 ```
 
 - Função que gira o carro para direita
+
+## Distancia
+
+Realiza a leitura do ultrassônico
+
+```cpp
+long ultrassonicRead();
+```
+
+- Retorna um _long_ correspondendo a distância em 'cm' lido pelo sensor ultrassônico
