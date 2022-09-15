@@ -1,6 +1,6 @@
 # Main
 
-Contém a lógica do programa
+Programa do carrinho seguidor de linha. Para modificar o código basta abrir _main.ino_ na IDE do Arduino e escrever nas funções presentes em _algorithm_ e/ou em _debug_.
 
 ## Ponte H 
 
@@ -24,13 +24,11 @@ void forward();
 
 - Função que move o carro para frente
 
-
 ```cpp
 void backward();
 ```
 
 - Função que move o carro para trás
-
 
 ```cpp
 void stop();
@@ -38,13 +36,11 @@ void stop();
 
 - Função que para o carro
 
-
 ```cpp
 void turnLeft();
 ```
 
 - Função que gira o carro para esquerda
-
 
 ```cpp
 void turnRight();
@@ -61,3 +57,19 @@ long ultrassonicRead();
 ```
 
 - Retorna um _long_ correspondendo a distância em 'cm' lido pelo sensor ultrassônico
+
+## Algorithm
+
+```cpp
+void algorithm();
+```
+
+- Função que implementa a lógica do robô.
+
+## Debug
+
+```cpp
+void debug();
+```
+
+- Função de teste.

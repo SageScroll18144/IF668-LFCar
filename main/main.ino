@@ -7,5 +7,5 @@ void setup() {
 
 void loop() {
   debug();
-  algorithm();
+  //algorithm();
 }
