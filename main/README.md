@@ -12,11 +12,11 @@ void setMode(int motor, char sense);
 
 - Seleciona o sentido de um dos motores (motor zero-base {0, 1}) 
 
-|char sense|Significado| 
+|```cpp char sense ```|Significado| 
 |------|--------|
-| 'F'  |Forward |
-|  'B'   |Backward |
-|  'S'   | Stop  |
+| ```cpp  'F' ```  |Forward |
+| ```cpp  'B' ```  |Backward |
+| ```cpp  'S' ``  | Stop  |
 
 ```cpp
 void forward();
