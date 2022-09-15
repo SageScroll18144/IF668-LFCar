@@ -58,6 +58,14 @@ long ultrassonicRead();
 
 - Retorna um _long_ correspondendo a distância em 'cm' lido pelo sensor ultrassônico
 
+## Sensor IR
+
+```cpp
+bool stayOnBlackLine();
+```
+
+- Retorna se está ou não sobre a linha preta.
+
 ## Algorithm
 
 ```cpp

@@ -1,3 +1,3 @@
 bool stayOnBlackLine(){
-  return digitalRead(sensor_ir);
+  return !digitalRead(sensor_ir);
 }
