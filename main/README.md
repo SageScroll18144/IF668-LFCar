@@ -2,6 +2,27 @@
 
 Programa do carrinho seguidor de linha. Para modificar o código basta abrir _main.ino_ na IDE do Arduino e escrever nas funções presentes em _algorithm_ e/ou em _debug_.
 
+## main
+
+Entre neste arquivo apenas para definir os pinos dos componentes do projeto.
+
+```c
+const int pinos_ph[] = {};
+```
+- Pinos que define os sentidos de movimentação do robô: {motor1, motor1, motor2, motor2, ... , motorN, motorN}
+
+```c
+const int ultrassonic = valor;
+```
+
+- Pino do ultrassônico, utilizado na detecção do objeto
+
+```c
+const int sensor_ir = valor;
+```
+
+- Pino do sensor infravermelho, utilizado na detecção da linha
+
 ## Ponte H 
 
 Realiza o controle dos motores do robô.
