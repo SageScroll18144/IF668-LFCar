@@ -6,18 +6,18 @@ Programa do carrinho seguidor de linha. Para modificar o código basta abrir _ma
 
 Entre neste arquivo apenas para definir os pinos dos componentes do projeto.
 
-```c
+```cpp
 const int pinos_ph[] = {};
 ```
 - Pinos que define os sentidos de movimentação do robô: {motor1, motor1, motor2, motor2, ... , motorN, motorN}
 
-```c
+```cpp
 const int ultrassonic = valor;
 ```
 
 - Pino do ultrassônico, utilizado na detecção do objeto
 
-```c
+```cpp
 const int sensor_ir = valor;
 ```
 
@@ -102,3 +102,16 @@ bool stayOnBlackLine();
 ```
 
 - Retorna se está ou não sobre a linha preta.
+
+# Exemplo de código
+
+```cpp
+void algorithm(){
+   foward();
+   delay(1000);
+   turnRight();
+   delay(500);
+}
+```
+
+- Faz o carrinho andar para frente por 1 segundo e dopois gira para a direita por meio segundo.
