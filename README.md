@@ -15,12 +15,16 @@ Na pasta _main_ há uma descrição de cada função implementada, pois o códig
 - Para utilizar as funções deste projeto basta fazer as seguintes etapas:
 
 i) ``` $ git clone https://github.com/SageScroll18144/IF668-LFCar ```
+
+
 ii) ``` $ cd main ```
+
+
 iii) ``` $ arduino ```
 
 - Vá para o arquivo _algorithm_ e implemente a lógica do programa na função contida, caso queria apenas testar algo, codifique na função ``` void debug() ``` presente no arquivo _debug_.
 
-- A [documentação](https://github.com/SageScroll18144/IF668-LFCar/blob/main/main/README.md) das funções presentes pode ser encontrada aqui: https://github.com/SageScroll18144/IF668-LFCar/blob/main/main/README.md.
+- A [documentação](https://github.com/SageScroll18144/IF668-LFCar/blob/main/main/README.md) das funções presentes pode ser encontrada aqui: https://github.com/SageScroll18144/IF668-LFCar/blob/main/main/README.md .
 
 ### Grupo
 
