@@ -1,4 +1,4 @@
-const int pinos_ph[4] = {};
+const int pinos_ph[] = {};
 const int ultrassonic = 0;
 const int sensor_ir = 0;
 
