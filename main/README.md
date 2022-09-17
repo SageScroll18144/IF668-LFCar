@@ -23,6 +23,22 @@ const int sensor_ir = valor;
 
 - Pino do sensor infravermelho, utilizado na detecção da linha
 
+## Algorithm
+
+```cpp
+void algorithm();
+```
+
+- Função que implementa a lógica do robô.
+
+## Debug
+
+```cpp
+void debug();
+```
+
+- Função de teste.
+
 ## Ponte H 
 
 Realiza o controle dos motores do robô.
@@ -86,19 +102,3 @@ bool stayOnBlackLine();
 ```
 
 - Retorna se está ou não sobre a linha preta.
-
-## Algorithm
-
-```cpp
-void algorithm();
-```
-
-- Função que implementa a lógica do robô.
-
-## Debug
-
-```cpp
-void debug();
-```
-
-- Função de teste.
