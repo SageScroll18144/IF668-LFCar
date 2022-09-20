@@ -1,6 +1,7 @@
 const int pinos_ph[] = {6, 7, 5, 4};
 const int pinos_v[] = {9, 3};
-const int ultrassonic = 0;
+const int ultrassonic_echo = 10;
+const int ultrassonic_trig = 8;
 const int sensor_ir = 2;
 
 void setup() {
