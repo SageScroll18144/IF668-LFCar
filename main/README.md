@@ -17,8 +17,8 @@ const int pinos_v[] = {};
 - Pinos que define a velocidade de rotação dos motores: {motor1, motor2, ... , motorN}
 
 ```cpp
-const int ultrassonic_echo = 10;
-const int ultrassonic_trig = 8;
+const int ultrassonic_echo = valor;
+const int ultrassonic_trig = valor;
 ```
 
 - Pinos do ultrassônico, utilizado na detecção do objeto
