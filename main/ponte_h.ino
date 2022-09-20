@@ -12,13 +12,28 @@ void setMode(int motor, char sense){
     Serial.println("*sense was incorrect value!*");
   }
 }
+void setVelocity(int motor, int speed){
+  analogWrite(pinos_v[motor], speed);
+}
 void forward(){
   setMode(0, 'F');
   setMode(1, 'F');
 }
+void forward(int speed){
+  setMode(0, 'F');
+  setMode(1, 'F');
+  setVelocity(0, speed);
+  setVelocity(1, speed);
+}
 void backward(){
   setMode(0, 'B');
   setMode(1, 'B');
+}
+void backward(int speed){
+  setMode(0, 'B');
+  setMode(1, 'B');
+  setVelocity(0, speed);
+  setVelocity(1, speed);
 }
 void stop(){
   setMode(0, 'S');
@@ -28,7 +43,20 @@ void turnLeft(){
   setMode(0, 'F');
   setMode(1, 'B');
 }
+
+void turnLeft(int speed){
+  setMode(0, 'F');
+  setMode(1, 'B');
+  setVelocity(0, speed);
+  setVelocity(1, speed);
+}
 void turnRight(){
   setMode(0, 'B');
   setMode(1, 'F');
+}
+void turnRight(int speed){
+  setMode(0, 'B');
+  setMode(1, 'F');
+  setVelocity(0, speed);
+  setVelocity(1, speed);
 }
