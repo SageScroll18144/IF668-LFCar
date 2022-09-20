@@ -4,7 +4,7 @@ Programa do carrinho seguidor de linha. Para modificar o código basta abrir _ma
 
 ## main
 
-Entre neste arquivo apenas para definir os pinos dos componentes do projeto. Por patrão já vem definido os pinos do projeto da cadeira de IC.
+Entre neste arquivo apenas para definir os pinos dos componentes do projeto. *Por patrão já vem definido os pinos do projeto da cadeira de IC*.
 
 ```cpp
 const int pinos_ph[] = {};
@@ -28,6 +28,10 @@ const int sensor_ir = valor;
 ```
 
 - Pino do sensor infravermelho, utilizado na detecção da linha
+
+![Screenshot](imgs/pinos.png)
+
+- Pinos padrão usados no projeto.
 
 ## Algorithm
 

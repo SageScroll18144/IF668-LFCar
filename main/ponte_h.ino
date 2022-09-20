@@ -43,7 +43,6 @@ void turnLeft(){
   setMode(0, 'F');
   setMode(1, 'B');
 }
-
 void turnLeft(int speed){
   setMode(0, 'F');
   setMode(1, 'B');
