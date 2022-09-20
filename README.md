@@ -28,4 +28,4 @@ iii) ``` $ arduino ```
 
 ### Grupo
 
-[Felipe Santos](https://github.com/SageScroll18144), [Lucas Absalão](https://github.com/LightAsh04), [Arthur Marsaro](https://github.com/arthurmarsar0), [Victor Mendonça](https://github.com/Mend25), [Pedro Victor](https://github.com/xupenio04).
+[Felipe Santos](https://github.com/SageScroll18144), [Lucas Absalão](https://github.com/LightAsh04), [Arthur Marsaro](https://github.com/arthurmarsar0), [Victor Mendonça](https://github.com/Mend25), [Pedro Victor](https://github.com/xupenio04), [Danilo Carvalho](https://github.com/DaniloLDCarvalho), [Alice BUarque](https://github.com/alicecadete28), [Guilherme Montenegro](https://github.com/GuilhermeMontt).
