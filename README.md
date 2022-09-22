@@ -7,6 +7,7 @@ Projeto de Introdução à Computação. Carrinho seguidor de linha.
 - (x1) Infravermelho;
 - (x2) Motores DC;
 - (x1) Ponte H L298N.
+- (x1) Buzzer.
 
 ## IDEA
 O grupo propôs a confecção de um carrinho seguidor de linha sem utilizar nenhuma biblioteca pronta e apenas codificando toda lógica do zero. 
