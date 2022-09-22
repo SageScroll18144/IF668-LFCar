@@ -39,22 +39,22 @@ void stop(){
   setMode(0, 'S');
   setMode(1, 'S');
 }
-void turnLeft(){
+void turnRight(){
   setMode(0, 'F');
-  setMode(1, 'B');
+  setMode(1, 'S');
 }
-void turnLeft(int speed){
+void turnRight(int speed){
   setMode(0, 'F');
-  setMode(1, 'B');
+  setMode(1, 'S');
   setVelocity(0, speed);
   setVelocity(1, speed);
 }
-void turnRight(){
-  setMode(0, 'B');
+void turnLeft(){
+  setMode(0, 'S');
   setMode(1, 'F');
 }
-void turnRight(int speed){
-  setMode(0, 'B');
+void turnLeft(int speed){
+  setMode(0, 'S');
   setMode(1, 'F');
   setVelocity(0, speed);
   setVelocity(1, speed);

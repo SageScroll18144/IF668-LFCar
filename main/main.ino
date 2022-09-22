@@ -1,3 +1,6 @@
+#define L 0
+#define R 1
+
 const int pinos_ph[] = {6, 7, 5, 4};
 const int pinos_v[] = {9, 3};
 const int ultrassonic_echo = 10;
