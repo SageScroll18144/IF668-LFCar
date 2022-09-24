@@ -125,6 +125,8 @@ void turnRight(int speed);
 
 - Função que gira o carro para direita, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
 
+### OBs.: Estas funções tem como eixo de rotação a roda
+
 ## Distância
 
 Realiza a leitura do ultrassônico

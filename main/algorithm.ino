@@ -2,22 +2,27 @@ double obstWidth, obstLength; //em centímetros
 double tgAngle, Angle_rad, Angle_degree; 
 double spinTimeLeft, periodLeft, forwardTime,spinTimeRight, periodRight;
 double speed;
+int distanciaPercorrida;
 #define PI 3.14159
 
 void algorithm(){
- if(ultrassonicRead() <= distanciaSegura){
+ if(ultrassonicRead() <= distancia_segura){
   //desvio
   stop();
   tgAngle = obstWidth / ultrassonicRead();
   Angle_rad = atan(tgAngle);
   Angle_degree = (Angle_rad * 180) / PI; 
-  turnLeft(30);
+  setVelocity(L, 60);
+  setVelocity(R, 80);
+  turnLeft();
   // periodLeft = calcular o tempo que o carrinho leva para dar uma volta completa em torno do própio eixo (pela esquerda)
   spinTimeLeft = (Angle_rad * periodLeft) / (2 * PI);
   delay(spinTimeLeft);
   stop();
-  forward(60);
-  distanciaPercorrida = ((obstLength/2) + distanciaSegura) / cos(Angle_degree);
+  setVelocity(L, 60);
+  setVelocity(R, 80);
+  forward();
+  distanciaPercorrida = ((obstLength/2) + distancia_segura) / cos(Angle_degree);
   // speed = calcular a velocidade em linha reta do carro em cm/s
   forwardTime = distanciaPercorrida / speed;
   delay(forwardTime);
@@ -26,7 +31,9 @@ void algorithm(){
   spinTimeRight = (Angle_rad * periodRight) / PI;
   delay(spinTimeRight);
   stop();
-  forward(60);
+  setVelocity(L, 60);
+  setVelocity(R, 80);
+  forward();
  }else{
     setVelocity(L, 60);
     setVelocity(R, 80);
