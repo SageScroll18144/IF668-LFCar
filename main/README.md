@@ -127,6 +127,31 @@ void turnRight(int speed);
 
 ### OBs.: Estas funções tem como eixo de rotação a roda
 
+```cpp
+void turnRightMiddleRobot();
+```
+
+- Função que gira o carro para direita com o eixo de rotação no centro.
+
+```cpp
+void turnRight(int speed);
+```
+
+- Função que gira o carro para direita com o eixo de rotação no centro, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
+
+```cpp
+void turnLeftMiddleRobot();
+```
+
+- Função que gira o carro para esquerda com o eixo de rotação no centro.
+
+```cpp
+void turnLeftMiddleRobot(int speed);
+```
+
+- Função que gira o carro para esquerda com o eixo de rotação no centro, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
+
+
 ## Distância
 
 Realiza a leitura do ultrassônico
