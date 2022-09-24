@@ -29,6 +29,9 @@ void debug(){
   forwardTime = distanciaPercorrida / speed;
   delay(forwardTime);
   stop();
+  setVelocity(L, 60);
+  setVelocity(R, 80);
+  turnRight();
   // periodRight = calcular o tempo que o carrinho leva para dar uma volta completa em torno do própio eixo (pela direita)
   spinTimeRight = (Angle_rad * periodRight) / PI;
   delay(spinTimeRight);
@@ -36,5 +39,13 @@ void debug(){
   setVelocity(L, 60);
   setVelocity(R, 80);
   forward();
+  //uma vez que o angulo de desvio em spinTimeLeft é igual ao angulo da trajetoria com a linha preta(considerando o obstaculo em um trajeto sem curvas), usamos novamente para retornar a linha
+  delay(forwardTime);
+  stop();
+  setVelocity(L, 60);
+  setVelocity(R, 80);
+  turnLeft();
+  delay(spinTimeLeft);
+  stop();
  }
 } 
