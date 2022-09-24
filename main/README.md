@@ -134,7 +134,7 @@ void turnRightMiddleRobot();
 - Função que gira o carro para direita com o eixo de rotação no centro.
 
 ```cpp
-void turnRight(int speed);
+void turnRightMiddleRobot(int speed);
 ```
 
 - Função que gira o carro para direita com o eixo de rotação no centro, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
