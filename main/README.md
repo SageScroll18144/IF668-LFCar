@@ -125,7 +125,7 @@ void turnRight(int speed);
 
 - Função que gira o carro para direita, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
 
-### OBs.: Estas funções tem como eixo de rotação a roda
+#### OBs.: Estas funções tem como eixo de rotação a roda, nessa próxima parte o centro de rotação muda.
 
 ```cpp
 void turnRightMiddleRobot();
