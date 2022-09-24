@@ -37,7 +37,7 @@ void algorithm(){
  }else{
     setVelocity(L, 60);
     setVelocity(R, 80);
-    if(stayOnBlackLine()){
+    if(stayOnBlackLine()==true){
       turnLeft();
     }else{
       turnRight();
