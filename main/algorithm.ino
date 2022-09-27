@@ -3,7 +3,6 @@ double tgAngle, Angle_rad, Angle_degree;
 double spinTimeLeft, periodLeft, forwardTime,spinTimeRight, periodRight;
 double speed;
 int distanciaPercorrida;
-#define PI 3.14159
 
 void algorithm(){
  if(ultrassonicRead() <= distancia_segura){
