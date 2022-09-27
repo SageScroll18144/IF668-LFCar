@@ -12,6 +12,8 @@ void setup() {
   for(int i=0;i<sizeof(pinos_ph)/sizeof(int);i++) pinMode(pinos_ph[i], OUTPUT);
   setVelocity(0, 255);
   setVelocity(1, 255);
+  pinMode(ultrassonic_echo, INPUT);
+  pinMode(ultrassonic_trig, OUTPUT);
   Serial.begin(9600);//FOR DEBUG
 }
 
