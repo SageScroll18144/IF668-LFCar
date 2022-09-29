@@ -48,6 +48,33 @@ void debug(){
   delay(spinTimeLeft);
   stop();
  }*/
+  if(ultrassonicRead() <= distancia_segura){
+        stop();
+        delay(1000);
+        //vira 90 graus para a esquerda
+        setVelocity(L, 50);
+        setVelocity(R, 55);
+        turnLeftMiddleRobot();
+        delay(timeToTurnLeft);
+        stop();
+        //anda durante 5 segundos para a frente
+        setVelocity(L, 50);
+        setVelocity(R, 55);
+        forward();
+        delay(timeToGoFoward);
+        stop();
+        //vira 90 graus para a direita
+        turnRightMiddleRobot();
+        delay(timeToTurn90Right);
+        stop();
+        //anda durante 5 segundos para a frente
+        setVelocity(L, 50);
+        setVelocity(R, 55);
+        forward();
+        //vira 90 graus para a direita
+        while(!stayOnBlackLine());
+        sen = 0; //Ajeita o valor do sentido (o desvio é feito pra esquerda)
+    }
   setVelocity(L, 60);
   setVelocity(R, 60);
   if(stayOnBlackLine()) {
