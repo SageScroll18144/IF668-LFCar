@@ -50,7 +50,10 @@ void debug(){
  }*/
   setVelocity(L, 60);
   setVelocity(R, 60);
-  if(stayOnBlackLine()) sen = !sen;
+  if(stayOnBlackLine()) {
+    while(stayOnBlackLine());
+    sen = !sen;
+  }
   if(sen) turnLeft();
   else turnRight();
 } 
