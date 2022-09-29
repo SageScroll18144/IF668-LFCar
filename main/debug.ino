@@ -7,7 +7,7 @@ void debug(){
     setVelocity(L, 60);
     setVelocity(R, 80);
     turnRight();
-  }*/
+  }
   if(ultrassonicRead() <= distancia_segura){
   //desvio
   stop();
@@ -47,5 +47,10 @@ void debug(){
   turnLeft();
   delay(spinTimeLeft);
   stop();
- }
+ }*/
+  setVelocity(L, 60);
+  setVelocity(R, 60);
+  if(stayOnBlackLine()) sen = !sen;
+  if(sen) turnLeft();
+  else turnRight();
 } 

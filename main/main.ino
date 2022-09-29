@@ -7,6 +7,7 @@ const int ultrassonic_echo = 10;
 const int ultrassonic_trig = 8;
 const int sensor_ir = 2;
 int distancia_segura = 5;
+bool sen = false;
 
 void setup() {
   for(int i=0;i<sizeof(pinos_ph)/sizeof(int);i++) pinMode(pinos_ph[i], OUTPUT);
