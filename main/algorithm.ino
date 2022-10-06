@@ -6,7 +6,7 @@ int distanciaPercorrida;
 
 void algorithm(){
  if(ultrassonicRead() <= distancia_segura){
-  digitalWrite(LED, HIGH);
+  //digitalWrite(LED, HIGH);
   //desvio
   stop();
   tgAngle = obstWidth / ultrassonicRead();
@@ -35,7 +35,7 @@ void algorithm(){
   setVelocity(R, 60);
   forward();
  }else{
-    digitalWrite(LED, LOW);
+    //digitalWrite(LED, LOW);
     setVelocity(L, 60);
     setVelocity(R, 60);
     if(!stayOnBlackLine()) {
