@@ -52,12 +52,20 @@ void debug(){
  const int timeToTurn90Right = 900;
  const int timeToGoForward = 1750; 
   if((ultrassonicRead() <= distancia_segura) && flag == 1){
+   while(1){
+    digitalWrite(20, HIGH);
+    delay(400);
+    digitalWrite(20, LOW);
+    digitalWrite(21, HIGH);
+    delay(400);
+    digitalWrite(21, LOW);
     stop();
-    setVelocity(L, 200);
-    setVelocity(R, 200);
+    setVelocity(L, 255);
+    setVelocity(R, 255);
     turnLeftMiddleRobot();
     play_music();
     flag = 0;
+   }
   }
   else if((ultrassonicRead() <= distancia_segura) && flag == 0){
         digitalWrite(20, HIGH);
@@ -89,17 +97,17 @@ void debug(){
         setVelocity(R, 55);
         forward();
         //vira 90 graus para a direita
-        while(stayOnBlackLine());
+        while(!stayOnBlackLine());
         sen = 0; //Ajeita o valor do sentido (o desvio é feito pra esquerda)
         digitalWrite(20,LOW);
         digitalWrite(21, LOW);
         flag = 1;
     }
   else{
-    setVelocity(L, 55);
+    setVelocity(L, 60);
     setVelocity(R, 60);
-    if(!stayOnBlackLine()) {
-      while(!stayOnBlackLine());
+    if(stayOnBlackLine()) {
+      while(stayOnBlackLine());
       sen = !sen;
     }
     if(sen) turnLeft();

@@ -8,7 +8,7 @@ const int ultrassonic_trig = 8;
 const int sensor_ir = 2;
 const int buzzer = 22;
 int distancia_segura = 10;
-bool sen = true;
+bool sen = false;
 int flag = 0;
 
 void setup() {
