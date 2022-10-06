@@ -5,7 +5,7 @@ double speed = 27.5;
 int distanciaPercorrida;
 
 void algorithm(){
- if(ultrassonicRead() <= distancia_segura){
+ if((ultrassonicRead() <= distancia_segura) && (ultrassonicRead() >= 5)){
   //digitalWrite(LED, HIGH);
   //desvio
   stop();

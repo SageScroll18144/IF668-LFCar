@@ -6,8 +6,10 @@ const int pinos_v[] = {9, 3};
 const int ultrassonic_echo = 10;
 const int ultrassonic_trig = 8;
 const int sensor_ir = 2;
+const int buzzer = 22;
 int distancia_segura = 10;
-bool sen = false;
+bool sen = true;
+int flag = 0;
 
 void setup() {
   for(int i=0;i<sizeof(pinos_ph)/sizeof(int);i++) pinMode(pinos_ph[i], OUTPUT);
@@ -24,5 +26,5 @@ void loop() {
   debug();
   //algorithm();
   //forward();
-  //turnRightMiddleRobot();
+  //play_music();
 }

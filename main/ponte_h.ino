@@ -62,10 +62,12 @@ void turnRightMiddleRobot(){
   setMode(1, 'B');
 }
 void turnRightMiddleRobot(int speed){
+  setVelocity(0, speed);
+  setVelocity(1, speed);  
   setMode(0, 'F');
   setMode(1, 'B');
-  setVelocity(0, speed);
 }
+  
 void turnLeftMiddleRobot(){
   setMode(0, 'B');
   setMode(1, 'F');
@@ -73,5 +75,6 @@ void turnLeftMiddleRobot(){
 void turnLeftMiddleRobot(int speed){
   setMode(0, 'B');
   setMode(1, 'F');
+  setVelocity(0, speed);
   setVelocity(1, speed);
 }
