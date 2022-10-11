@@ -23,8 +23,8 @@ void setup() {
 }
 
 void loop() {
-  debug();
-  //algorithm();
+  //debug();
+  algorithm();
   //forward();
   //play_music();
 }
