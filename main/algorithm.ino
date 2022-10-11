@@ -3,11 +3,11 @@ double tgAngle, Angle_rad, Angle_degree;
 double spinTimeLeft, periodLeft = 2000, forwardTime,spinTimeRight, periodRight = 2000;
 double speed = 27.5;
 int distanciaPercorrida;
-
-void algorithm(){
- const int timeToTurnLeft = 250;
+const int timeToTurnLeft = 250;
  const int timeToTurn90Right = 900;
  const int timeToGoForward = 1750; 
+void algorithm(){
+ 
   if((ultrassonicRead() <= distancia_segura) && flag == 1){
    while(1){
      setVelocity(L, 255);
