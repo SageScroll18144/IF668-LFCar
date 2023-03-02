@@ -1,69 +1,24 @@
-void debug(){
-  /*if(stayOnBlackLine()){
-    setVelocity(L, 60);
-    setVelocity(R, 80);
-    turnLeft();
-  }else{
-    setVelocity(L, 60);
-    setVelocity(R, 80);
-    turnRight();
-  }
-  if(ultrassonicRead() <= distancia_segura){
-  //desvio
-  stop();
-  tgAngle = obstWidth / ultrassonicRead();
-  Angle_rad = atan(tgAngle);
-  Angle_degree = (Angle_rad * 180) / PI; 
-  setVelocity(L, 60);
-  setVelocity(R, 80);
-  turnLeft();
-  // periodLeft = calcular o tempo que o carrinho leva para dar uma volta completa em torno do própio eixo (pela esquerda)
-  spinTimeLeft = (Angle_rad * periodLeft) / (2 * PI);
-  delay(spinTimeLeft);
-  stop();
-  setVelocity(L, 60);
-  setVelocity(R, 80);
-  forward();
-  distanciaPercorrida = ((obstLength/2) + distancia_segura) / cos(Angle_degree);
-  // speed = calcular a velocidade em linha reta do carro em cm/s
-  forwardTime = distanciaPercorrida / speed;
-  delay(forwardTime);
-  stop();
-  setVelocity(L, 60);
-  setVelocity(R, 80);
-  turnRight();
-  // periodRight = calcular o tempo que o carrinho leva para dar uma volta completa em torno do própio eixo (pela direita)
-  spinTimeRight = (Angle_rad * periodRight) / PI;
-  delay(spinTimeRight);
-  stop();
-  setVelocity(L, 60);
-  setVelocity(R, 80);
-  forward();
-  //uma vez que o angulo de desvio em spinTimeLeft é igual ao angulo da trajetoria com a linha preta(considerando o obstaculo em um trajeto sem curvas), usamos novamente para retornar a linha
-  delay(forwardTime);
-  stop();
-  setVelocity(L, 60);
-  setVelocity(R, 80);
-  turnLeft();
-  delay(spinTimeLeft);
-  stop();
- }*/ 
- const int timeToTurnLeft = 250;
+/*double obstWidth = 7, obstLength = 7; //em centímetros
+double tgAngle, Angle_rad, Angle_degree; 
+double spinTimeLeft, periodLeft = 2000, forwardTime,spinTimeRight, periodRight = 2000;
+double speed = 27.5;
+int distanciaPercorrida;
+const int timeToTurnLeft = 250;
  const int timeToTurn90Right = 900;
  const int timeToGoForward = 1750; 
+void debug(){
+ 
   if((ultrassonicRead() <= distancia_segura) && flag == 1){
    while(1){
-    digitalWrite(20, HIGH);
-    delay(400);
-    digitalWrite(20, LOW);
-    digitalWrite(21, HIGH);
-    delay(400);
-    digitalWrite(21, LOW);
-    stop();
-    setVelocity(L, 255);
+     setVelocity(L, 255);
     setVelocity(R, 255);
     turnLeftMiddleRobot();
     play_music();
+    digitalWrite(20, HIGH);
+     digitalWrite(21, LOW);
+    delay(400);
+    digitalWrite(20, LOW);
+    digitalWrite(21, HIGH);
     flag = 0;
    }
   }
@@ -104,7 +59,7 @@ void debug(){
         flag = 1;
     }
   else{
-    setVelocity(L, 60);
+    setVelocity(L, 60);//mudanca
     setVelocity(R, 60);
     if(stayOnBlackLine()) {
       while(stayOnBlackLine());
@@ -113,4 +68,5 @@ void debug(){
     if(sen) turnLeft();
     else turnRight();
   }
-} 
+}
+*/
