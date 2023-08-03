@@ -19,12 +19,9 @@ void setup() {
   pinMode(ultrassonic_trig, OUTPUT);
   pinMode(20, OUTPUT);
   pinMode(21,OUTPUT);
-  Serial.begin(9600);//FOR DEBUG
+  Serial.begin(9600);
 }
 
 void loop() {
-  //debug();
   algorithm();
-  //forward();
-  //play_music();
 }
