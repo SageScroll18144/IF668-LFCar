@@ -1,6 +1,6 @@
 # Main
 
-Programa do carrinho seguidor de linha. Para modificar o código basta abrir _main.ino_ na IDE do Arduino e escrever nas funções presentes em _algorithm_ e/ou em _debug_.
+Programa do carrinho seguidor de linha. Para modificar o código basta abrir _main.ino_ na IDE do Arduino e utilizar as funções em _algorithm_.
 
 ## main
 
