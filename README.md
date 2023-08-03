@@ -20,11 +20,12 @@ A priori o aluno não precisa se preocupar com os componentes eletrônicos do ca
 ## Dúvidas
 Em caso de dúvidas ou dificuldades, entre em contato com os monitores ou diretamente comigo:
 
-## bug Encontrou um bug ou pensou numa melhoria?
+## Encontrou um bug ou pensou numa melhoria?
 
 Encorajamos os alunos a procurarem por bugs e sugerirem melhorias para o projeto, visando aperfeiçoá-lo para as próximas edições da disciplina. Se você identificou algum bug ou possui uma ideia para melhorar o projeto, ficaremos felizes em receber sua contribuição!
 
 Existem duas maneiras de nos enviar suas sugestões:
-    Issue: Abra uma issue detalhando o problema ou a melhoria proposta. Certifique-se de fornecer informações claras e específicas para facilitar a compreensão do que precisa ser corrigido ou aprimorado.
+    
+- Issue: Abra uma issue detalhando o problema ou a melhoria proposta. Certifique-se de fornecer informações claras e específicas para facilitar a compreensão do que precisa ser corrigido ou aprimorado.
 
-    Pull Request: Se você é familiarizado com o processo de pull requests, sinta-se à vontade para enviar suas alterações diretamente por meio de um pull request. Certifique-se de descrever claramente as alterações realizadas e o motivo por trás delas.
+- Pull Request: Se você é familiarizado com o processo de pull requests, sinta-se à vontade para enviar suas alterações diretamente por meio de um pull request. Certifique-se de descrever claramente as alterações realizadas e o motivo por trás delas.
