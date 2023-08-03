@@ -16,7 +16,7 @@ A priori o aluno não precisa se preocupar com os componentes eletrônicos do ca
 - (x2) Motores DC;
 - (x1) Ponte H L298N.
 - (x1) Buzzer.
-- 
+  
 ## Dúvidas
 Em caso de dúvidas ou dificuldades, entre em contato com os monitores ou diretamente comigo:
 
