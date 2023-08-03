@@ -39,15 +39,7 @@ const int sensor_ir = valor;
 void algorithm();
 ```
 
-- Função que implementa a lógica do robô.
-
-## Debug
-
-```cpp
-void debug();
-```
-
-- Função de teste.
+- Função que implementa a lógica do robô. A equipe irá trabalhar aqui.
 
 ## Ponte H 
 
