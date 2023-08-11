@@ -1,3 +1,5 @@
+// Seleciona o sentido do motor especifico
+// 0 - motor da esquerda - 1 - Motor da diretira(olhando de tras dele; A definir melhor)
 void setMode(int motor, char sense){
   if(sense == 'F'){
     digitalWrite(pinos_ph[(2*motor)], HIGH);
@@ -12,9 +14,11 @@ void setMode(int motor, char sense){
     Serial.println("*sense was incorrect value!*");
   }
 }
+// Seleciona a velocidade do motor especificado
 void setVelocity(int motor, int speed){
   analogWrite(pinos_v[motor], speed);
 }
+// funcoes para o movimento
 void forward(){
   setMode(0, 'F');
   setMode(1, 'F');
@@ -57,6 +61,7 @@ void turnLeft(int speed){
   setMode(1, 'F');
   setVelocity(1, speed);
 }
+// Da um 180° no sentido horario
 void turnRightMiddleRobot(){
   setMode(0, 'F');
   setMode(1, 'B');
@@ -67,7 +72,7 @@ void turnRightMiddleRobot(int speed){
   setMode(0, 'F');
   setMode(1, 'B');
 }
-  
+// 180° no sentido anti-horario
 void turnLeftMiddleRobot(){
   setMode(0, 'B');
   setMode(1, 'F');
