@@ -16,7 +16,13 @@ void setMode(int motor, char sense){
 }
 // Seleciona a velocidade do motor especificado
 void setVelocity(int motor, int speed){
-  analogWrite(pinos_v[motor], speed);
+  // Conpensacao do penso dele(Testar para ver se o 1 e suficiente)
+  if (motor == 0)
+  {
+    analogWrite(pinos_v[motor], speed+1);
+  } else {
+    analogWrite(pinos_v[motor], speed);
+  }
 }
 // funcoes para o movimento
 void forward(){
