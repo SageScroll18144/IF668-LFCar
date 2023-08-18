@@ -1,9 +1,3 @@
-#include "algorithm.ino"
-#include "distancia.ino"
-#include "ponte_h.ino"
-#include "sensor_IR.ino"
-
-
 #define L 0
 #define R 1
 // Pinos para definir o sentido dos motores(no esquema está como entradas)
@@ -14,7 +8,8 @@ const int pinos_v[] = {9, 3};
 const int ultrassonic_echo = 10;
 const int ultrassonic_trig = 8;
 // Sensor optico aparentemente
-char sensor_ir[] = "A0";
+const int sensor_ir = 2;
+// Buzzer
 const int buzzer = 22;
 
 bool sen = false;
@@ -27,10 +22,11 @@ void setup() {
   pinMode(ultrassonic_echo, INPUT);
   pinMode(ultrassonic_trig, OUTPUT);
   pinMode(20, OUTPUT);
-  pinMode(21,OUTPUT);
+  pinMode(21, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop() {
   algorithm();
+  
 }

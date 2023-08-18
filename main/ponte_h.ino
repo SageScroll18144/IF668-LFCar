@@ -26,7 +26,7 @@ void forward(){
 void forward(int speed){
   setMode(0, 'F');
   setMode(1, 'F');
-  setVelocity(0, speed);
+  setVelocity(0, speed+1);
   setVelocity(1, speed);
 }
 void backward(){
