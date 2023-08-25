@@ -1,36 +1,33 @@
-//#include "ponte_h.ino"
 //define as variaveis
+#include "sensor_IR.ino"
+#include "distancia.ino"
+#include "ponte_h.ino"
 char cont = 'D';
 void algorithm(){
-    
-   do
+   if (cont == 'D')
+      {
+         turnRight(55);
+      } else if (cont == 'E')
+      {
+         turnLeft(55);
+      }
+   if (stayOnBlackLine())
    {
-      forward(55);    
-   } while(stayOnBlackLine());
-   stop();
-   if (cont == 'D' && !stayOnBlackLine())
-   {
-      
-   while (cont == 'D' && !stayOnBlackLine())
-   {
-      turnRightMiddleRobot(55);
-      delay(700);
-      stop();
-      cont = 'L';
-   }
+      delay(280);
+      if (!stayOnBlackLine() && cont == 'D')
+      {
+         turnLeft(55);
+         cont = 'E';
+      } else if (!stayOnBlackLine() && cont == 'E')
+      {
+         turnRight(55);
+         cont = 'D';
+      }  
    }
    
-   if (cont == 'L' && !stayOnBlackLine())
-   {
-     while (cont == 'L' && !stayOnBlackLine())
-     {
-       turnLeftMiddleRobot(55);
-      delay(700);
-      stop();
-      cont = 'D';
-     }
-     
-   }
-   stop();
-   delay(1000);
+   
+  
+
+  
+
 }
