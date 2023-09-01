@@ -1,3 +1,5 @@
+// Seleciona o sentido do motor especifico
+// 0 - motor da esquerda - 1 - Motor da diretira(olhando de tras dele; A definir melhor)
 void setMode(int motor, char sense){
   if(sense == 'F'){
     digitalWrite(pinos_ph[(2*motor)], HIGH);
@@ -12,9 +14,17 @@ void setMode(int motor, char sense){
     Serial.println("*sense was incorrect value!*");
   }
 }
+// Seleciona a velocidade do motor especificado
 void setVelocity(int motor, int speed){
-  analogWrite(pinos_v[motor], speed);
+  // Conpensacao do penso dele(Testar para ver se o 1 e suficiente)
+  if (motor == 0)
+  {
+    analogWrite(pinos_v[motor], speed+1);
+  } else {
+    analogWrite(pinos_v[motor], speed);
+  }
 }
+// funcoes para o movimento
 void forward(){
   setMode(0, 'F');
   setMode(1, 'F');
@@ -22,7 +32,7 @@ void forward(){
 void forward(int speed){
   setMode(0, 'F');
   setMode(1, 'F');
-  setVelocity(0, speed);
+  setVelocity(0, speed+1);
   setVelocity(1, speed);
 }
 void backward(){
@@ -57,17 +67,18 @@ void turnLeft(int speed){
   setMode(1, 'F');
   setVelocity(1, speed);
 }
+// Da um 180° no sentido horario
 void turnRightMiddleRobot(){
   setMode(0, 'F');
   setMode(1, 'B');
 }
 void turnRightMiddleRobot(int speed){
-  setVelocity(0, speed);
-  setVelocity(1, speed);  
   setMode(0, 'F');
   setMode(1, 'B');
+  setVelocity(0, speed);
+  setVelocity(1, speed);  
 }
-  
+// 180° no sentido anti-horario
 void turnLeftMiddleRobot(){
   setMode(0, 'B');
   setMode(1, 'F');
@@ -77,4 +88,18 @@ void turnLeftMiddleRobot(int speed){
   setMode(1, 'F');
   setVelocity(0, speed);
   setVelocity(1, speed);
+}
+
+void clockwiseCircle(int speed){
+  setMode(0, 'F');
+  setMode(1, 'F');
+  setVelocity(0, (speed*17)/10);
+  setVelocity(1, speed);
+}
+
+void counterClockwise(int speed){
+  setMode(0, 'F');
+  setMode(1, 'F');
+  setVelocity(0, speed);
+  setVelocity(1, (speed*17)/10);
 }

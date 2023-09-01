@@ -73,7 +73,7 @@ void forward();
 void forward(int speed);
 ```
 
-- Função que move o carro para frente, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
+- Função que move o carro para frente, recebe um argumento para definir a velocidade dos motores pertencente ao intervalo [0, 255]
 
 ```cpp
 void backward();
@@ -85,7 +85,7 @@ void backward();
 void backward(int speed);
 ```
 
-- Função que move o carro para trás, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
+- Função que move o carro para trás, recebe um argumento para definir a velocidade dos motores pertencente ao intervalo [0, 255]
 
 ```cpp
 void stop();
@@ -103,7 +103,7 @@ void turnLeft();
 void turnLeft(int speed);
 ```
 
-- Função que gira o carro para esquerda, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
+- Função que gira o carro para esquerda, recebe um argumento para definir a velocidade dos motores pertencente ao intervalo [0, 255]
 
 ```cpp
 void turnRight();
@@ -115,7 +115,7 @@ void turnRight();
 void turnRight(int speed);
 ```
 
-- Função que gira o carro para direita, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
+- Função que gira o carro para direita, recebe um argumento para definir a velocidade dos motores pertencente ao intervalo [0, 255]
 
 #### OBs.: Estas funções tem como eixo de rotação a roda, nessa próxima parte o centro de rotação muda.
 
@@ -129,7 +129,7 @@ void turnRightMiddleRobot();
 void turnRightMiddleRobot(int speed);
 ```
 
-- Função que gira o carro para direita com o eixo de rotação no centro, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
+- Função que gira o carro para direita com o eixo de rotação no centro, recebe um argumento para definir a velocidade dos motores pertencente ao intervalo [0, 255]
 
 ```cpp
 void turnLeftMiddleRobot();
@@ -141,7 +141,7 @@ void turnLeftMiddleRobot();
 void turnLeftMiddleRobot(int speed);
 ```
 
-- Função que gira o carro para esquerda com o eixo de rotação no centro, recebe um argumento para definir a velocidade dos motores pertencente ao intervalor [0, 255]
+- Função que gira o carro para esquerda com o eixo de rotação no centro, recebe um argumento para definir a velocidade dos motores pertencente ao intervalo [0, 255]
 
 
 ## Distância
@@ -173,4 +173,4 @@ void algorithm(){
 }
 ```
 
-- Faz o carrinho andar para frente por 1 segundo e dopois gira para a direita por meio segundo.
+- Faz o carrinho andar para frente por 1 segundo e depois gira para a direita por meio segundo.
