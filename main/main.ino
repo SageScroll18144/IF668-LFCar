@@ -1,7 +1,3 @@
-#include "sensor_IR.ino"
-#include "distancia.ino"
-#include "ponte_h.ino"
-
 #define L 0
 #define R 1
 // Pinos para definir o sentido dos motores(no esquema está como entradas)
@@ -28,6 +24,9 @@ void setup() {
   pinMode(20, OUTPUT);
   pinMode(21, OUTPUT);
   Serial.begin(9600);
+  pinMode(24, OUTPUT);
+  pinMode(26, OUTPUT);
+  pinMode(28, OUTPUT);
 }
 
 void loop() {

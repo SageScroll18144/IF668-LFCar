@@ -93,7 +93,7 @@ void turnLeftMiddleRobot(int speed){
 void clockwiseCircle(int speed){
   setMode(0, 'F');
   setMode(1, 'F');
-  setVelocity(0, (speed*17)/10);
+  setVelocity(0, (speed*22)/10);
   setVelocity(1, speed);
 }
 
@@ -101,5 +101,5 @@ void counterClockwise(int speed){
   setMode(0, 'F');
   setMode(1, 'F');
   setVelocity(0, speed);
-  setVelocity(1, (speed*17)/10);
+  setVelocity(1, (speed*22)/10);
 }
